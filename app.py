@@ -6,6 +6,10 @@ app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
     "DATABASE_URL", "postgresql:///avatar_db"
 )
+print(os.getenv(
+    "DATABASE_URL", "postgresql:///avatar_db"
+))
+print(app.config["SQLALCHEMY_DATABASE_URI"])
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_ECHO"] = True
 app.secret_key = "#Avatarthelastairbender!2"
