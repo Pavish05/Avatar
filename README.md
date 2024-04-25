@@ -85,6 +85,7 @@ I also want to add more information about the Avatar universe. Right now the sit
   (venv) $ pip install -r requirements.txt
 
   (venv) $createdb avatar_db
+  
   (venv) $python seed.sql
 
   (venv) $flask run
