@@ -24,6 +24,12 @@
            
             {% if session.user_id %}
             <!-- If user is logged in, display logout button -->
+            <li class="nav-item">
+                <a class="btn btn-sm btn-secondary" href="/episodes">Episodes</a>
+            </li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-sm btn-secondary" href="/questions">Trivia</a>
+            </li>
             <li class="nav-item ml-2">
                 <form action="{{ url_for('logout') }}" method="post">
                     <button type="submit" class="btn btn-sm btn-secondary">Logout</button>
@@ -31,12 +37,7 @@
             </li>
             {% else %}
             <!-- If user is not logged in, display login button -->
-            <li class="nav-item">
-                <a class="btn btn-sm btn-secondary" href="/episodes">Episodes</a>
-            </li>
-            <li class="nav-item ml-2">
-                <a class="btn btn-sm btn-secondary" href="/questions">Trivia</a>
-            </li>
+            
             <li class="nav-item ml-2">
                 <a class="btn btn-sm btn-secondary" href="/signup">Sign Up</a>
             </li>

@@ -10,7 +10,7 @@
         <h6>{{ question.question }}</h6>
         {% for answer in question.possible_answers %}
         <label>
-            <input type="radio" name="{{ question.id }}" value="{{ answer }}" checked required>{{ answer }}
+            <input type="radio" name="{{ question.id }}" value="{{ answer }}" required>{{ answer }}
         </label>
         {% endfor %}
         </select>
